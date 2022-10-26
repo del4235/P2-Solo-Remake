@@ -28,7 +28,7 @@ hs_err_pid*
 *.DS_Store
 *out/
 *target/
-*referance/
+*ref/
 
  # NOTE: Remember to remove  the *.war for the deploy branch. #
 *.war
