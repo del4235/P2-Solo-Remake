@@ -1,6 +1,6 @@
 package com.revature.rectarot.models.enums;
 
-public enum Card_Suit {
+public enum EnumSuit {
     CUPS,
     NONE,
     PENTACLES,
