@@ -1,15 +1,15 @@
 package com.revature.rectarot.models;
 
-import javax.annotation.Generated;
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.UUID;
 
 @Entity
 @Table(name = "Users")
 public class User {
     @Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY) //TODO: Look up how this works
-    private String user_id;
+    private UUID user_id;
     @Column(name = "username", nullable = false)
     private String username;
     @Column(name = "password", nullable = false)
@@ -23,7 +23,7 @@ public class User {
 
     public User(){}
 
-    public User(String user_id, String username, String password, String salt, Timestamp date_joined, Timestamp last_login) {
+    public User(UUID user_id, String username, String password, String salt, Timestamp date_joined, Timestamp last_login) {
         this.user_id = user_id;
         this.username = username;
         this.password = password;
@@ -32,11 +32,11 @@ public class User {
         this.last_login = last_login;
     }
 
-    public String getUser_id() {
+    public UUID getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(String user_id) {
+    public void setUser_id(UUID user_id) {
         this.user_id = user_id;
     }
 

@@ -6,12 +6,13 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "Decks")
 public class Deck {
     @Id
-    private String deck_id;
+    private UUID deck_id;
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", nullable = false)
     @JsonBackReference
@@ -23,18 +24,18 @@ public class Deck {
 
     public Deck(){}
 
-    public Deck(String deck_id, User user_id, ArrayList<String> card_Ids, Timestamp date_created) {
+    public Deck(UUID deck_id, User user_id, ArrayList<String> card_Ids, Timestamp date_created) {
         this.deck_id = deck_id;
         this.user_id = user_id;
         this.card_ids = card_Ids;
         this.date_created = date_created;
     }
 
-    public String getDeck_id() {
+    public UUID getDeck_id() {
         return deck_id;
     }
 
-    public void setDeck_id(String deck_id) {
+    public void setDeck_id(UUID deck_id) {
         this.deck_id = deck_id;
     }
 

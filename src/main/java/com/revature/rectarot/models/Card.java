@@ -20,8 +20,8 @@ public class Card {
     private ArrayList<String> meaningsRev;
     @Column(name = "value", nullable = false)
     private int value;
-    @Column(name = "suit", nullable = false)
-    @Enumerated(EnumType.STRING)
+    @Column(name = "suit", columnDefinition = "enumsuit", nullable = false)
+    //@Enumerated(EnumType.STRING)
     private EnumSuit suit;
     @Column(name = "major", nullable = false)
     private boolean major;

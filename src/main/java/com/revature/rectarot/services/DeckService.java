@@ -1,2 +1,7 @@
-package com.revature.rectarot.services;public class DeckServices {
+package com.revature.rectarot.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DeckService {
 }

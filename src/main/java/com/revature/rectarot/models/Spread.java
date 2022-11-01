@@ -9,7 +9,9 @@ import java.util.ArrayList;
 @Table(name = "Spreads")
 public class Spread {
     @Id
-    @Enumerated(EnumType.STRING)
+    //@Enumerated(EnumType.STRING)
+    //@Type(type = "com.revature.rectarot.models.enums.EnumTranslator")
+    @Column(columnDefinition = "enumspread")
     private EnumSpread spread_id;
     @Column(name = "number_of_cards", nullable = false)
     private int numOfCards;

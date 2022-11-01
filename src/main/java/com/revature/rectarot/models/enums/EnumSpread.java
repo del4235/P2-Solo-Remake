@@ -1,5 +1,8 @@
 package com.revature.rectarot.models.enums;
 
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+
 /*
 *ONE = Quick Draw one card
 * TWO = Quick Draw two cards
