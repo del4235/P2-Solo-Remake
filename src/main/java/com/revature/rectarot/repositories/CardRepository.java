@@ -11,7 +11,7 @@ public interface CardRepository extends CrudRepository<Card, String> {
     * save()
     * findById()
     * findAll()
-    * coujnt()
+    * count()
     * deleteById()
     *  */
 }
