@@ -17,7 +17,7 @@ public class SecurityConfig {
 
     @Bean
     public InMemoryUserDetailsManager inMemoryUserDetailsManager(){
-        return new InMemoryUserDetailsManager(User.withUsername("user").password("revature").authorities("read").build());
+        return new InMemoryUserDetailsManager(User.withUsername("user").password("{noop}revature").authorities("read").build());
     }
 
     @Bean
