@@ -42,10 +42,10 @@ public class ReadingController {
         List<String> savedReadings = new ArrayList<>();
         return savedReadings;
     }
-    @GetMapping(value = "/viewSavedreading",  consumes = "application/json", produces = MediaType.APPLICATION_JSON_VALUE)
+   /* @GetMapping(value = "/viewSavedreading",  consumes = "application/json", produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody String viewSavedReading(@RequestParam(required = true) String readingId, HttpServletResponse resp, HttpServletRequest req){
 
         return "savedReading";
-    }
+    }*/
 
 }
